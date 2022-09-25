@@ -6,7 +6,7 @@ import Login from '../screen/Login'
 const MySwiper = (props) => {
     let arr = props.images
     const goLoginPage = () => {
-        console.log('111');
+        props.navigation.navigate("Login")
       
     }
     return (
@@ -58,6 +58,10 @@ const styles = StyleSheet.create({
         height: 200
     },
     swiperImgButton: {
-
+        backgroundColor: 'orange',
+        paddingVertical: 5,
+        paddingHorizontal: 20,
+        borderRadius: 20,
+        marginTop: 40
     }
 })

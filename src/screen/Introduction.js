@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import MySwiper from '../components/MySwiper'
 
-const Introduction = () => {
+const Introduction = (props) => {
     const [swiperImgs,setSwiperImgs] = useState([
         {id:1,img: require("../assets/introduction/introduction1.png")},
         {id:2,img: require("../assets/introduction/introduction2.png")},
@@ -10,7 +10,7 @@ const Introduction = () => {
     ])
     return (
         <View style={styles.container}>
-            <MySwiper images={swiperImgs}></MySwiper>
+            <MySwiper {...props} images={swiperImgs}></MySwiper>
         </View>
     )
 }

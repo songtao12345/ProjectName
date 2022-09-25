@@ -22,8 +22,9 @@ const TabNav = () => {
             headerShown: false
           })}
         >
-            <Tab.Screen name="GoHealth" component={GoHealthScreen} options={{title: '健康'}}/>
-            <Tab.Screen name="GoCircle" component={GoCircleScreen} options={{title: 'GoCircle'}}/>
+    
+            <Tab.Screen name="GoCircle" component={GoCircleScreen} options={{title: 'Go圈'}}/>
+            <Tab.Screen name="GoHealth" component={GoHealthScreen} options={{title: 'Go健康'}}/>
         </Tab.Navigator>
     )
 }

@@ -77,7 +77,7 @@ import com.android.build.OutputFile
  * ]
  */
 project.ext.vectoricons = [
-    iconFontNames: [ 'FontAwesome.ttf','MaterialIcons.ttf', 'EvilIcons.ttf'] 
+    iconFontNames: [ 'FontAwesome.ttf','MaterialIcons.ttf', 'EvilIcons.ttf','AntDesign.ttf'] 
   ]
 project.ext.react = [
     enableHermes: false,  // clean and rebuild if changing
