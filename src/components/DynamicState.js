@@ -145,7 +145,21 @@ const dtRenderItem = (item) => {
                     })
                 }
             </View>
-            <View style={styles.dtItemIcon}></View>
+            <View style={styles.dtItemIcon}>
+                <View style={styles.iconLeft}>
+                    <View style={styles.iconItem}>
+                        <IconAntd name="like2" size={20} style={styles.icons}/>
+                        <Text>{item.zanCount}</Text>
+                    </View>
+                    <View style={styles.iconItem}>
+                        <IconAntd name="message1" size={20} style={styles.icons}/>
+                        <Text>{item.msgCount}</Text>
+                    </View>
+                </View>
+                <View style={styles.iconRight}>
+                    <MaterialIcons name="more-horiz" size={30} color="gray"/>
+                </View>
+            </View>
         </View>
     )
 }
@@ -265,7 +279,28 @@ const styles = StyleSheet.create({
 
     },
     dtItemIcon: {
-
+        flexDirection: 'row',
+        // justifyContent: 'space-between',
+        alignItems: 'center'
+    },
+    iconLeft: {
+        width: '50%',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+    },
+    iconRight: {
+        width: '50%',
+        flexDirection: 'row',
+        justifyContent: 'flex-end'
+    },
+    iconItem: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center'
+    },
+    icons: {
+        marginRight: 5
     },
     headerUser: {
         flexDirection: 'row',
